@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework', # Django REST Framework for API development
     'homepage',  # Ensure your app is listed here
+    'demo_rest_api', # Ensure your app is listed here
 ]
 
 MIDDLEWARE = [
