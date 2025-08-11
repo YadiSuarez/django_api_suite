@@ -9,7 +9,7 @@ from datetime import datetime
 # Create your views here.
 class LandingAPI(APIView):
     name = "Landing API"
-    collection_name = "data"  # ← nombre de la colección en Realtime Database
+    collection_name = "votes"  # ← nombre de la colección en Realtime Database
 
     def get(self, request):
 
@@ -21,7 +21,7 @@ class LandingAPI(APIView):
 
         # Devuelve un arreglo JSON
         return Response(data, status=status.HTTP_200_OK)
-    
+
     def post(self, request):
 
       data = request.data
